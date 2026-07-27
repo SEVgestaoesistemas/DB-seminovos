@@ -69,7 +69,7 @@ const carros = [
       "assets/imagens/carros/nivus-2-traseira.jpeg",
       "assets/imagens/carros/nivus-3-interior.jpeg"
     ],
-    descricao: "Volkswagen Nivus Comfortline 1.0 200 TSI 2024, preto, automático e com quilometragem zero.",
+    descricao: "Volkswagen Nivus Comfortline 1.0 200 TSI 2024, preto, automático. veiculo com 56.000 km.",
     whatsappMensagem: "Olá! Tenho interesse no Volkswagen Nivus Comfortline 200 TSI 2024 anunciado no site."
   },
   {
