@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Diego Brandão Veículos: seminovos selecionados, procedência e atendimento personalizado.">
+  <meta name="theme-color" content="#111111">
+  <title>Diego Brandão Veículos | Seminovos selecionados</title>
+  <link rel="icon" href="assets/imagens/logo/favicon-db.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/catalogo.css">
+  <link rel="stylesheet" href="css/modal.css">
+  <link rel="stylesheet" href="css/whatsapp-button.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <!-- Cabeçalho fixo com navegação principal. -->
+  <header class="header" id="inicio">
+    <div class="container header__content">
+      <a class="brand" href="#inicio" aria-label="Diego Brandão Veículos, início">
+        <span class="brand__logo"><img src="assets/imagens/logo/logo-db.png" alt="Logomarca DB"></span>
+        <span class="brand__name">Diego Brandão <strong>Veículos</strong></span>
+      </a>
+      <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu-principal"><span></span><span></span><span></span></button>
+      <nav class="navigation" id="menu-principal" aria-label="Navegação principal">
+        <a href="#inicio">Início</a><a href="#catalogo">Catálogo</a><a href="#sobre">Sobre</a><a href="#localizacao">Localização</a><a class="nav-contact" href="#contato">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Apresentação da revenda. -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero__image" role="img" aria-label="Veículo esportivo em frente a uma loja moderna"></div>
+      <div class="container hero__content">
+        <p class="eyebrow eyebrow--light">SELEÇÃO COM PROCEDÊNCIA</p>
+        <h1 id="hero-title">Seu próximo carro,<br><em>do jeito certo.</em></h1>
+        <p class="hero__text">Carros novos, seminovos e também carros de repasse. Veículos selecionados, transparência em cada detalhe e uma negociação que respeita o seu momento.</p>
+        <a class="button button--light" href="#catalogo">Ver catálogo <span aria-hidden="true">→</span></a>
+      </div>
+      <a class="hero__scroll" href="#destaques">Conheça a seleção <span aria-hidden="true">↓</span></a>
+    </section>
+
+    <!-- Diferenciais comerciais da revenda. -->
+    <section class="benefits" aria-labelledby="beneficios-title">
+      <div class="container benefits__grid reveal">
+        <div class="benefits__intro"><p class="eyebrow">NEGOCIE COM TRANQUILIDADE</p><h2 id="beneficios-title">Mais facilidade<br>para você.</h2></div>
+        <article class="benefit"><span class="benefit__number">01</span><h3>Seu usado vale negócio.</h3><p>Aceitamos o seu carro usado como parte de pagamento.</p></article>
+        <article class="benefit"><span class="benefit__number">02</span><h3>Melhor avaliação.</h3><p>Trabalhamos para oferecer a melhor avaliação do mercado.</p></article>
+        <article class="benefit"><span class="benefit__number">03</span><h3>Pagamento facilitado.</h3><p>Parcele sua compra em até 12x no cartão de crédito.</p></article>
+      </div>
+    </section>
+
+    <!-- Os destaques também são renderizados pelo arquivo de dados. -->
+    <section class="section section--compact section--dark" id="destaques" aria-labelledby="destaques-title">
+      <div class="container">
+        <div class="section-heading"><div><p class="eyebrow">EM DESTAQUE</p><h2 id="destaques-title">Escolhas que inspiram.</h2></div><a class="text-link" href="#catalogo">Ver todos <span>→</span></a></div>
+        <div class="vehicle-grid vehicle-grid--featured" id="lista-destaques" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <!-- Catálogo completo com filtros que funcionam sem recarregar a página. -->
+    <section class="section section--catalog" id="catalogo" aria-labelledby="catalogo-title">
+      <div class="container">
+        <div class="section-heading section-heading--stack"><div><p class="eyebrow">ESTOQUE DISPONÍVEL</p><h2 id="catalogo-title">Encontre o seu.</h2></div><p class="section-lead">Escolha com calma. Nós cuidamos do restante.</p></div>
+        <form class="filters" id="filtros-catalogo" aria-label="Filtros do catálogo">
+          <label><span class="sr-only">Buscar por marca ou modelo</span><input id="busca" type="search" placeholder="Buscar marca ou modelo"></label>
+          <label><span class="sr-only">Faixa de preço</span><select id="preco"><option value="todos">Qualquer preço</option><option value="100000">Até R$ 100 mil</option><option value="150000">Até R$ 150 mil</option><option value="200000">Até R$ 200 mil</option><option value="acima-200000">Acima de R$ 200 mil</option></select></label>
+          <label><span class="sr-only">Ordenar veículos</span><select id="ordenacao"><option value="padrao">Ordenar por</option><option value="menor-preco">Menor preço</option><option value="maior-preco">Maior preço</option><option value="mais-recente">Mais recente</option></select></label>
+          <button class="filters__clear" id="limpar-filtros" type="button" hidden>Limpar filtros</button>
+        </form>
+        <p class="results-count" id="contador-resultados" aria-live="polite"></p>
+        <div class="vehicle-grid" id="lista-catalogo" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <!-- Conteúdo institucional. -->
+    <section class="section about" id="sobre" aria-labelledby="sobre-title"><div class="container about__grid"><div><p class="eyebrow">SOBRE A DB</p><h2 id="sobre-title">Mais que carros.<br><em>Boas histórias.</em></h2></div><div class="about__copy"><p>Na Diego Brandão Veículos, acreditamos que comprar um carro deve ser uma experiência segura, simples e especial.</p><p>Por isso, cada veículo do nosso estoque passa por uma seleção criteriosa. Aqui, procedência, cuidado e atendimento humano vêm antes de tudo.</p><div class="about__numbers"><div><strong>+10</strong><span>anos de mercado</span></div><div><strong>100%</strong><span>veículos avaliados</span></div><div><strong>1:1</strong><span>atendimento próximo</span></div></div></div></div></section>
+
+    <!-- Dados de localização: substitua os placeholders no HTML quando houver endereço definitivo. -->
+    <section class="location" id="localizacao" aria-labelledby="localizacao-title"><div class="location__map"><iframe title="Mapa da localização da Diego Brandão Veículos" src="https://www.google.com/maps?q=Estrada+do+Bongi,+127&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div><div class="location__content"><p class="eyebrow eyebrow--light">VISITE A NOSSA LOJA</p><h2 id="localizacao-title">Vamos conversar<br><em>pessoalmente.</em></h2><address>Imbiribeira Veículos<br>Estrada do Bongi, 127</address><div class="hours"><strong>Horários</strong><span>Seg. a Sex. · 08h às 18h</span><span>Sábado · 08h às 13h</span></div><a class="button button--light" href="https://maps.google.com/?q=Estrada+do+Bongi,+127" target="_blank" rel="noopener">Como chegar <span aria-hidden="true">↗</span></a></div></section>
+  </main>
+
+  <!-- Rodapé com canais de atendimento. -->
+  <footer class="footer" id="contato"><div class="container"><div class="footer__top"><a class="brand brand--footer" href="#inicio"><span class="brand__logo"><img src="assets/imagens/logo/logo-db.png" alt="Logomarca DB"></span><span class="brand__name">Diego Brandão <strong>Veículos</strong></span></a><p>Seu próximo capítulo começa aqui.</p><a class="footer__whatsapp" data-whatsapp-geral href="#">WhatsApp +55 (81) 9747-0525 <span aria-hidden="true">↗</span></a></div><div class="footer__bottom"><span>© <span id="ano-atual"></span> Diego Brandão Veículos.</span><span>Todos os direitos reservados.</span><div class="social-links"><a href="#" aria-label="Instagram">Instagram</a><a href="#" aria-label="Facebook">Facebook</a></div></div></div></footer>
+
+  <!-- Janela de detalhes preenchida pelo JavaScript. -->
+  <div class="modal" id="modal-carro" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modal-titulo"><div class="modal__backdrop" data-fechar-modal></div><div class="modal__panel" role="document"><button class="modal__close" type="button" aria-label="Fechar detalhes do veículo" data-fechar-modal>×</button><div id="conteudo-modal"></div></div></div>
+  <a class="whatsapp-float" data-whatsapp-geral href="#" aria-label="Falar com a Diego Brandão Veículos pelo WhatsApp"><img src="assets/icones/whatsapp.svg" alt="" width="26" height="26"></a>
+
+  <script src="js/carros-dados.js"></script><script src="js/renderizar-catalogo.js"></script><script src="js/modal-carro.js"></script><script src="js/whatsapp.js"></script><script src="js/main.js"></script>
+</body>
+</html>

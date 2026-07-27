@@ -1,0 +1,2 @@
+/* Personalize aqui as principais cores, fontes e espaçamentos do site. */
+:root { --color-ink:#050505; --color-paper:#ffffff; --color-muted:#f7f4ee; --color-line:#e6dcc9; --color-text:#625a4d; --color-accent:#c99743; --color-accent-dark:#9a6c27; --color-gold-light:#f0d097; --color-whatsapp:#25d366; --font-sans:"Inter", Arial, sans-serif; --font-display:"Playfair Display", Georgia, serif; --container:1200px; --space-1:0.5rem; --space-2:1rem; --space-3:1.5rem; --space-4:2rem; --space-5:3rem; --space-6:5.5rem; --radius:2px; --shadow:0 15px 45px rgba(17,17,17,.12); }
