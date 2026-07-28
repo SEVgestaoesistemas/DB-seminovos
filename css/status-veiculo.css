@@ -1,0 +1,6 @@
+/* Estados de disponibilidade dos anúncios. */
+.vehicle-card--sold { cursor:default; opacity:.72; }
+.vehicle-card--sold:hover { border-color:var(--color-line); box-shadow:none; transform:none; }
+.vehicle-card--sold:hover .vehicle-card__image::after { opacity:0; }
+.vehicle-card--sold:hover img { transform:none; }
+.vehicle-card__tag--sold { background:#252525; color:#fff; }
