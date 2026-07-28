@@ -117,5 +117,26 @@ const carros = [
     ],
     descricao: "Citroën C3 2019, prata, automático e com 55.000 km.",
     whatsappMensagem: "Olá! Tenho interesse no Citroën C3 2019 anunciado no site."
+  },
+  {
+    id: 6,
+    marca: "Nissan",
+    modelo: "Kicks",
+    ano: 2023,
+    preco: 96990,
+    km: 40000,
+    combustivel: "Não informado",
+    cambio: "Não informado",
+    cor: "Cinza",
+    pneus: "Não informado",
+    ipva: "Não informado",
+    destaque: false,
+    imagens: [
+      "assets/imagens/carros/kicks-1-frente.jpeg",
+      "assets/imagens/carros/kicks-2-traseira.jpeg",
+      "assets/imagens/carros/kicks-3-interior.jpeg"
+    ],
+    descricao: "Nissan Kicks 2023, cinza, com 40.000 km.",
+    whatsappMensagem: "Olá! Tenho interesse no Nissan Kicks 2023 anunciado no site."
   }
 ];
