@@ -138,5 +138,29 @@ const carros = [
     ],
     descricao: "Nissan Kicks 2023, cinza, com 40.000 km.",
     whatsappMensagem: "Olá! Tenho interesse no Nissan Kicks 2023 anunciado no site."
+  },
+  {
+    id: 7,
+    marca: "Fiat",
+    modelo: "Toro Ranch",
+    ano: 2022,
+    preco: 127990,
+    km: 60000,
+    combustivel: "Diesel",
+    cambio: "Automático",
+    cor: "Cinza",
+    pneus: "Não informado",
+    ipva: "Não informado",
+    tracao: "4x4",
+    destaque: false,
+    imagens: [
+      "assets/imagens/carros/toro-1-frente.jpeg",
+      "assets/imagens/carros/toro-2-lateral.jpeg",
+      "assets/imagens/carros/toro-3-traseira-lateral.jpeg",
+      "assets/imagens/carros/toro-4-volante.jpeg",
+      "assets/imagens/carros/toro-5-painel.jpeg"
+    ],
+    descricao: "Fiat Toro Ranch 2022, cinza, diesel, 4x4 e automática. Veículo com 60.000 km.",
+    whatsappMensagem: "Olá! Tenho interesse na Fiat Toro Ranch 2022 anunciada no site."
   }
 ];
