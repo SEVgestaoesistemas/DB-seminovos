@@ -162,5 +162,26 @@ const carros = [
     ],
     descricao: "Fiat Toro Ranch 2022, cinza, diesel, 4x4 e automática. Veículo com 60.000 km.",
     whatsappMensagem: "Olá! Tenho interesse na Fiat Toro Ranch 2022 anunciada no site."
+  },
+  {
+    id: 8,
+    marca: "Hyundai",
+    modelo: "Creta Limited 1.0 Turbo",
+    ano: 2024,
+    preco: 112990,
+    km: 39000,
+    combustivel: "Não informado",
+    cambio: "Automático",
+    cor: "Azul",
+    pneus: "Não informado",
+    ipva: "Não informado",
+    destaque: false,
+    imagens: [
+      "assets/imagens/carros/creta-limited-1-frente.jpeg",
+      "assets/imagens/carros/creta-limited-2-interior.jpeg",
+      "assets/imagens/carros/creta-limited-3-painel.jpeg"
+    ],
+    descricao: "Hyundai Creta Limited 1.0 Turbo 2024, azul, automática e com 39.000 km.",
+    whatsappMensagem: "Olá! Tenho interesse no Hyundai Creta Limited 1.0 Turbo 2024 anunciado no site."
   }
 ];
