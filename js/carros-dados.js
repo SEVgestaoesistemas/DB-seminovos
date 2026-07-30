@@ -183,5 +183,26 @@ const carros = [
     ],
     descricao: "Hyundai Creta Limited 1.0 Turbo 2024, azul, automática e com 39.000 km.",
     whatsappMensagem: "Olá! Tenho interesse no Hyundai Creta Limited 1.0 Turbo 2024 anunciado no site."
+  },
+  {
+    id: 9,
+    marca: "Nissan",
+    modelo: "Kicks Exclusive 1.6",
+    ano: 2023,
+    preco: 107990,
+    km: 44000,
+    combustivel: "Não informado",
+    cambio: "Automático",
+    cor: "Branco",
+    pneus: "Não informado",
+    ipva: "Não informado",
+    destaque: false,
+    imagens: [
+      "assets/imagens/carros/kicks-exclusive-1-frente.jpeg",
+      "assets/imagens/carros/kicks-exclusive-2-traseira-lateral.jpeg",
+      "assets/imagens/carros/kicks-exclusive-3-traseira.jpeg"
+    ],
+    descricao: "Nissan Kicks Exclusive 1.6 2023, branco, automático e com 44.000 km.",
+    whatsappMensagem: "Olá! Tenho interesse no Nissan Kicks Exclusive 1.6 2023 anunciado no site."
   }
 ];
