@@ -204,5 +204,30 @@ const carros = [
     ],
     descricao: "Nissan Kicks Exclusive 1.6 2023, branco, automático e com 44.000 km.",
     whatsappMensagem: "Olá! Tenho interesse no Nissan Kicks Exclusive 1.6 2023 anunciado no site."
+  },
+  {
+    id: 10,
+    marca: "Jeep",
+    modelo: "Commander Overland",
+    ano: 2022,
+    preco: 150900,
+    precoFipe: 165000,
+    km: 59000,
+    combustivel: "Não informado",
+    cambio: "Automático",
+    cor: "Prata",
+    pneus: "Não informado",
+    ipva: "Não informado",
+    tracao: "4x4",
+    destaque: false,
+    imagens: [
+      "assets/imagens/carros/commander-1-frente.jpeg",
+      "assets/imagens/carros/commander-2-traseira-lateral.jpeg",
+      "assets/imagens/carros/commander-3-frente-lateral.jpeg",
+      "assets/imagens/carros/commander-4-painel.jpeg",
+      "assets/imagens/carros/commander-5-bancos-traseiros.jpeg"
+    ],
+    descricao: "Jeep Commander Overland 2022, prata, 4x4, automática e com 59.000 km. Veículo anunciado abaixo da FIPE.",
+    whatsappMensagem: "Olá! Tenho interesse no Jeep Commander Overland 2022 anunciado no site."
   }
 ];
