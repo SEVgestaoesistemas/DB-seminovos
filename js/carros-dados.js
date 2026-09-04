@@ -17,6 +17,7 @@ const carros = [
     pneus: "Bom",
     ipva: "2026 em dia",
     destaque: true,
+    vendido: true,
     imagens: [
       "assets/imagens/carros/evoque-1-frente.jpeg",
       "assets/imagens/carros/evoque-2-traseira.jpeg",
@@ -220,6 +221,7 @@ const carros = [
     ipva: "Não informado",
     tracao: "4x4",
     destaque: false,
+    vendido: true,
     imagens: [
       "assets/imagens/carros/commander-1-frente.jpeg",
       "assets/imagens/carros/commander-2-traseira-lateral.jpeg",
